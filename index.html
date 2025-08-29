@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Tester By Sakshyam Upadhayay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="decor">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid"></div>
+    </div>
+    <div class="layout column">
+      <div class="pair-grid">
+      <section class="container glass card form-card">
+        <h1 class="title">API Tester By Sakshyam Upadhayay</h1>
+        <div class="toolbar">
+          <button id="igFollowBtn" class="btn-ig" type="button" aria-label="Follow on Instagram">
+            <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <radialGradient id="igGrad" cx="0.5" cy="1" r="1">
+                <stop offset="0%" stop-color="#feda75"/>
+                <stop offset="50%" stop-color="#d62976"/>
+                <stop offset="100%" stop-color="#4f5bd5"/>
+              </radialGradient>
+              <path fill="url(#igGrad)" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2.2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6zM18.5 5.5a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/>
+            </svg>
+            <span>Follow Instagram</span>
+          </button>
+        </div>
+        <div class="field">
+          <label>Provider</label>
+          <select id="provider">
+            <optgroup label="Popular">
+              <option value="openai">OpenAI</option>
+              <option value="anthropic">Anthropic (Claude)</option>
+              <option value="gemini">Google Gemini</option>
+              <option value="mistral">Mistral</option>
+              <option value="cohere">Cohere</option>
+              <option value="deepseek">DeepSeek</option>
+              <option value="qwen">Qwen (Alibaba/DashScope)</option>
+              <option value="groq">Groq</option>
+              <option value="perplexity">Perplexity</option>
+            </optgroup>
+            <optgroup label="OpenAI-compatible">
+              <option value="together">Together AI</option>
+            </optgroup>
+            <optgroup label="Unified API">
+              <option value="edenai">Eden AI</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="field field-inline">
+          <label>API Key</label>
+          <input id="apiKey" type="password" placeholder="API key (sk-... or AIza...)" />
+        </div>
+        <div class="field">
+          <small class="hint">Model is auto-selected for simplicity.</small>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea id="input" rows="6" placeholder="Type your prompt..."></textarea>
+        </div>
+        <div class="actions">
+          <button id="sendBtn" class="btn-primary">Send</button>
+          <button id="resetBtn" class="btn-ghost">Reset</button>
+        </div>
+        <div id="status" class="status badge"></div>
+      </section>
+
+      <section class="container glass card chat-card full">
+        <h2 class="subtitle">Conversation</h2>
+        <div id="history" class="history"></div>
+        <pre id="output" class="output" aria-live="polite"></pre>
+      </section>
+      </div>
+
+      <section class="container glass card ad-grid">
+        <div class="ad-box small">Advertisement here</div>
+        <div class="ad-box small">Advertisement here</div>
+        <div class="ad-box small">Advertisement here</div>
+        <div class="ad-box small">Advertisement here</div>
+      </section>
+
+      <footer class="container glass card footer-ad">
+        <div class="ad-box banner">Advertisement here</div>
+      </footer>
+      <div class="footer-meta">
+        <span>© Sakshyam Upadhayay</span>
+        <span>·</span>
+        <a href="https://wa.me/9768442380" target="_blank" rel="noopener noreferrer">WhatsApp: 9768442380</a>
+      </div>
+    </div>
+
+    <div id="heartStorm" class="heart-storm" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
